@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8485a78f9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background: rgba(0, 0, 0, 0.08);
+    }
+    #nav {
+      /* border: 1px solid red; */
+      position: absolute;
+      width: 1920px;
+      height: 100px;
+      left: 0px;
+      top: 0px;
+      background-color: #ffff;
+      display: flex;
+      /* justify-content: space-between; */
+    }
+
+    #right {
+      border: 1px solid black;
+    }
+    #btn1 {
+      position: absolute;
+      width: 96px;
+      height: 23px;
+      left: 1369px;
+      top: 39px;
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      color: #727479;
+      border: none;
+      background-color: transparent;
+    }
+    #btn2 {
+      box-sizing: border-box;
+
+      position: absolute;
+      width: 130px;
+      height: 44px;
+      left: 1495px;
+      top: 28px;
+      color: #5746ec;
+      background: #ffffff;
+      border: 1.5px solid #5746ec;
+      border-radius: 7px;
+    }
+    #btn3 {
+      box-sizing: border-box;
+
+      position: absolute;
+      width: 130px;
+      height: 44px;
+      left: 1640px;
+      top: 28px;
+      color: #ffffff;
+      background: #5746ec;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      border: none;
+    }
+
+    #left {
+      /* border: 1px solid teal; */
+
+      position: absolute;
+      width: 43px;
+      height: 42px;
+      left: 150px;
+      top: 29px;
+      background-image: url("assets/Nextyn\ gradient\ png\ 1.png");
+    }
+
+    /* nav baar css ended */
+
+    /* container 1 start */
+    #container1 {
+      border: 3px solid red;
+      position: absolute;
+      width: 1920px;
+      height: 801px;
+      left: 0px;
+      top: 99px;
+
+      background: #f8f8f8;
+    }
+    #boxleft {
+      position: absolute;
+      border: 2px solid orange;
+      left: 7.81%;
+      right: 53.28%;
+      top: 191px;
+      bottom: 90.22%;
+      height: 240px;
+      width: 747px;
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 80px;
+      /* or 125% */
+
+      letter-spacing: -0.02em;
+
+      background: linear-gradient(92.84deg, #5746ec -34.59%, #f55656 93.19%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      /* text-fill-color: transparent; */
+    }
+    #boxright {
+      box-sizing: border-box;
+      height: 480px;
+      width: 600px;
+      position: absolute;
+      left: 59.17%;
+      right: 9.58%;
+      top: 120px;
+      bottom: 87.25%;
+
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      /* 3 */
+
+      box-shadow: 0px 10px 6px rgba(180, 212, 221, 0.2);
+      border-radius: 18px;
+    }
+    #lorem {
+      position: absolute;
+      width: 553px;
+      height: 60px;
+      left: 150px;
+      top: 560px;
+
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 30px;
+      /* or 136% */
+
+      letter-spacing: -0.02em;
+
+      color: #202020;
+    }
+    #text {
+      position: absolute;
+      /* border: 1px solid brown; */
+      width: 418px;
+      height: 90px;
+      left: 91px;
+      top: 10px;
+      color: #000000;
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 45px;
+      /* or 129% */
+
+      text-align: center;
+
+      color: #000000;
+    }
+    #tag1 {
+      position: absolute;
+      left: 30px;
+      top: 170px;
+      bottom: 92.43%;
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: #666666;
+    }
+    #tag2 {
+      position: absolute;
+      left: 30px;
+      /* right: 32.76%; */
+      top: 281px;
+      bottom: 90.38%;
+
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+
+      color: #666666;
+    }
+    #name {
+      box-sizing: border-box;
+      position: absolute;
+      left: 30px;
+      right: 32px;
+      height: 54px;
+      width: 538px;
+      top: 221px;
+      bottom: 91.14%;
+
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+    #email {
+      box-sizing: border-box;
+      position: absolute;
+      left: 30px;
+      right: 32px;
+      top: 334px;
+
+      height: 54px;
+      width: 538px;
+      bottom: 89.09%;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+    #btn {
+      box-sizing: border-box;
+      position: absolute;
+      left: 30px;
+      right: 32px;
+      top: 412px;
+      bottom: 87.8%;
+      height: 50px;
+      width: 538px;
+      color: white;
+      font-size: 18px;
+      border: none;
+      background: #5746ec;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    /* container 1 end */
+
+    /* 3 colmn start ...........*/
+    #heading {
+      position: absolute;
+      left: 38.7%;
+      right: 38.75%;
+      top: 1000px;
+      margin-bottom: 20px;
+      bottom: 80.03%;
+
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 70px;
+      line-height: 82px;
+      text-align: center;
+      letter-spacing: -0.02em;
+
+      color: #000000;
+    }
+    #rowlorem {
+      position: absolute;
+      width: 527px;
+      height: 25px;
+      left: 696px;
+      top: 1102px;
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 25px;
+      /* identical to box height, or 125% */
+
+      text-align: center;
+
+      color: #5c5f62;
+    }
+
+    #row3container {
+      box-sizing: border-box;
+
+      position: absolute;
+      width: 1420px;
+      height: 670px;
+      left: 250px;
+      top: 1207px;
+      border: 1px solid teal;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+    #search {
+      position: absolute;
+      width: 261px;
+      height: 54px;
+      left: 80px;
+      top: 133px;
+
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 71px;
+      line-height: 54px;
+      /* identical to box height, or 76% */
+
+      /* G5 */
+
+      background: linear-gradient(92.84deg, #5746ec -34.59%, #f55656 93.19%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      /* text-fill-color: transparent; */
+    }
+    #top {
+      position: absolute;
+      width: 507px;
+      height: 108px;
+      left: 80px;
+      top: 247px;
+
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 54px;
+      /* or 135% */
+
+      color: #000000;
+    }
+    #rowlorem {
+      position: absolute;
+      width: 489px;
+      height: 125px;
+      left: 80px;
+      top: 385px;
+
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      /* or 125% */
+
+      color: #5c5f62;
+    }
+    #rowdownbox {
+      width: 112px;
+      height: 23px;
+      margin-top: 545px;
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      margin-left: 80px;
+      color: #5746ec;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
+    #row2colm3 {
+      position: absolute;
+      width: 634px;
+      height: 670px;
+      left: 786px;
+      top: 0px;
+
+      background: #5746ec;
+      opacity: 0.6;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.06);
+      border-radius: 0px 12px 12px 0px;
+    }
+    #row3imagediv {
+      position: absolute;
+      border: 1px solid red;
+      width: 534px;
+      height: 520.17px;
+      left: 1086px;
+      top: 1278px;
+
+      background: url(Search.png);
+    }
+  </style>
+  <body>
+    <div id="nav">
+      <div id="left"></div>
+      <div id="right">
+        <button id="btn1">Contact us</button>
+        <button id="btn2">Login</button>
+        <button id="btn3">Register</button>
+      </div>
+    </div>
+
+    <!-- nav baar end -->
+
+    <!-- 1 box starts here.. -->
+    <div id="container1">
+      <div id="boxleft">
+        <p>
+          We are
+          <br />
+          the best way to connect <br />
+          with Industry Experts
+        </p>
+
+        <div id="lorem">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut magnam,
+          dolor, quos reprehenderit quam quasi saepe, maiores explicabo beatae
+          non quae.
+        </div>
+      </div>
+      <div id="boxright">
+        <p id="text">
+          Get Trial version <br />
+          to find experts
+        </p>
+        <p id="tag1">Full Name</p>
+        <input type="text" id="name" />
+        <p id="tag2">Email Address</p>
+        <input type="text" name="" id="email" />
+
+        <button id="btn">Get Started</button>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <!-- 3 row starts.......... -->
+    <div id="row">
+      <p id="heading">Expert Cloud</p>
+      <p id="rowlorem">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      </p>
+
+      <div id="row3container">
+        <p id="search">Search.</p>
+        <p id="top">
+          Top Experts with <br />
+          advanced search.
+        </p>
+        <p id="rowlorem">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <p id="rowdownbox">
+          Get Started <i class="fa-solid fa-angle-right"></i>
+        </p>
+        <div id="row2colm3">
+          <div id="row2imagediv"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
