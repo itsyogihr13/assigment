@@ -14,6 +14,12 @@
     body {
       background: rgba(0, 0, 0, 0.08);
     }
+    #maindiv {
+      width: 1920px;
+      background-color: #ffff;
+      border: 10px solid orange;
+      height: 5400px;
+    }
     #nav {
       /* border: 1px solid red; */
       position: absolute;
@@ -270,7 +276,7 @@
       position: absolute;
       width: 527px;
       height: 25px;
-      left: 716px;
+      left: 736px;
       top: 1142px;
       font-family: "DM Sans";
       font-style: normal;
@@ -383,22 +389,23 @@
       box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.06);
       border-radius: 0px 12px 12px 0px;
     }
-    #row3imagediv {
+    #row2imagediv {
       position: absolute;
-      border: 1px solid red;
+      /* border: 10px solid red; */
       width: 534px;
       height: 520.17px;
-      left: 1086px;
-      top: 1278px;
+      left: 50px;
+      top: 72px;
       background-image: url("assets/Search\ 3.png");
+      z-index: 100px;
     }
     #rectangle1 {
       position: absolute;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       width: 200px;
       height: 851.56px;
-      left: 267px;
-      top: -190px;
+      left: 217px;
+      top: -242px;
 
       background: linear-gradient(
         180.68deg,
@@ -409,12 +416,12 @@
     }
     #rectangle2 {
       position: absolute;
-      border: 1px solid black;
+      /* border: 1px solid black; */
 
       width: 200px;
       height: 851.56px;
       left: 195px;
-      top: 100px;
+      top: 10px;
 
       background: linear-gradient(
         180.68deg,
@@ -423,79 +430,87 @@
       );
       transform: rotate(-132.11deg);
     }
+
+    /* styling end of row2 */
+
+    /* now row 3 start....... */
   </style>
   <body>
-    <div id="nav">
-      <div id="left"></div>
-      <div id="right">
-        <button id="btn1">Contact us</button>
-        <button id="btn2">Login</button>
-        <button id="btn3">Register</button>
-      </div>
-    </div>
-
-    <!-- nav baar end -->
-
-    <!-- 1 box starts here.. -->
-    <div id="container1">
-      <div id="boxleft">
-        <p>
-          We are
-          <br />
-          the best way to connect <br />
-          with Industry Experts
-        </p>
-
-        <div id="lorem">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut magnam,
-          dolor, quos reprehenderit quam quasi saepe, maiores explicabo beatae
-          non quae.
+    <div id="maindiv">
+      <div id="nav">
+        <div id="left"></div>
+        <div id="right">
+          <button id="btn1">Contact us</button>
+          <button id="btn2">Login</button>
+          <button id="btn3">Register</button>
         </div>
       </div>
-      <div id="boxright">
-        <p id="text">
-          Get Trial version <br />
-          to find experts
-        </p>
-        <p id="tag1">Full Name</p>
-        <input type="text" id="name" />
-        <p id="tag2">Email Address</p>
-        <input type="text" name="" id="email" />
 
-        <button id="btn">Get Started</button>
+      <!-- nav baar end -->
+
+      <!-- 1 box starts here.. -->
+      <div id="container1">
+        <div id="boxleft">
+          <p>
+            We are
+            <br />
+            the best way to connect <br />
+            with Industry Experts
+          </p>
+
+          <div id="lorem">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+            magnam, dolor, quos reprehenderit quam quasi saepe, maiores
+            explicabo beatae non quae.
+          </div>
+        </div>
+        <div id="boxright">
+          <p id="text">
+            Get Trial version <br />
+            to find experts
+          </p>
+          <p id="tag1">Full Name</p>
+          <input type="text" id="name" />
+          <p id="tag2">Email Address</p>
+          <input type="text" name="" id="email" />
+
+          <button id="btn">Get Started</button>
+        </div>
       </div>
-    </div>
-    <!-- container end -->
+      <!-- container end -->
 
-    <!-- 3 row starts.......... -->
-    <div id="row">
-      <p id="heading">Expert Cloud</p>
-      <p id="row2lorem">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      </p>
+      <!-- 2 row starts.......... -->
+      <div id="row">
+        <p id="heading">Expert Cloud</p>
+        <p id="row2lorem">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        </p>
 
-      <div id="row3container">
-        <p id="search">Search.</p>
-        <p id="top">
-          Top Experts with <br />
-          advanced search.
-        </p>
-        <p id="rowlorem">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <p id="rowdownbox">
-          Get Started <i class="fa-solid fa-angle-right"></i>
-        </p>
-        <div id="row2colm3">
-          <div id="row2imagediv">
-            <div id="rectangle1">1</div>
-            <div id="rectangle2">2</div>
+        <div id="row3container">
+          <p id="search">Search.</p>
+          <p id="top">
+            Top Experts with <br />
+            advanced search.
+          </p>
+          <p id="rowlorem">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p id="rowdownbox">
+            Get Started <i class="fa-solid fa-angle-right"></i>
+          </p>
+          <div id="row2colm3">
+            <div id="row2imagediv">
+              <div id="rectangle1">1</div>
+              <div id="rectangle2">2</div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- row3 start here  -->
     </div>
   </body>
 </html>
